@@ -35,11 +35,11 @@
     </style>
 </head>
 
-<body class="bg-light">
+<body>
 
     <div class="container py-5">
         <?php
-        $simulacionTramites; // tramite a buscar
+        $simulacionTramites = 1; // tramite a buscar
         if (isset($tramites[$simulacionTramites])): 
         $t = $tramites[$simulacionTramites];?>
 
@@ -59,7 +59,7 @@
                                 <div class="step-icon <?php echo $clase; ?> shadow-sm">
                                     <?php echo ($num < $t['paso_actual']) ? '✓' : $num; ?>
                                 </div>
-                                <small class="fw-bold d-block"><?php echo $paso['titulo']; ?></small>
+                                <small class="fw-bold d-block"><?php echo $paso['etapa']; ?></small>
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -79,7 +79,7 @@
                             <tbody>
                                 <?php foreach ($t['pasos'] as $paso): ?>
                                     <tr>
-                                        <td><strong><?php echo $paso['titulo']; ?></strong></td>
+                                        <td><strong><?php echo $paso['etapa']; ?></strong></td>
                                         <td><?php echo $paso['desc']; ?></td>
                                         <td><span class="badge bg-light text-dark border"><?php echo $paso['check']; ?></span>
                                         </td>
