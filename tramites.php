@@ -1,7 +1,9 @@
 <?php
 // simulacion de datos para tramites de la put
+
+
 $tramites = [
-    "1" => [
+    "$simulacionTramites" => [
         "tramite" => "2602011517058",
         "tipo" => "Renovacion de licencia",
         "oficina" => "Oficina INTT - La california",

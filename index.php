@@ -39,9 +39,9 @@
 
     <div class="container py-5">
         <?php
-        $id = "1"; // tramite a buscar
-        if (isset($tramites[$id])): 
-        $t = $tramites[$id];?>
+        $simulacionTramites; // tramite a buscar
+        if (isset($tramites[$simulacionTramites])): 
+        $t = $tramites[$simulacionTramites];?>
 
             <div class="card shadow-sm border-0">
                 <div class="card-header bg-secondary text-white p-4">
